@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 50px;
+    color: white;
+    transition: all 1s;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(#0ff,#9ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+input{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: red;
+    top: calc(var(--i)*60px);
+    left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: top;
+}
+input:nth-child(7){
+    top: 100px;
+    left: 890px;
+}
+input:nth-child(7):focus~ .box .front{
+    transform: translateZ(200px) rotateY(360deg);
+}
+input:nth-child(7):focus~ .box .back{
+    transform: translateZ(-200px) rotateY(360deg);
+}
+input:nth-child(7):focus~ .box .left{
+    right: 400px;
+}
+input:nth-child(7):focus~ .box .right{
+    left: 400px;
+}
+input:nth-child(7):focus~ .box .top{
+    bottom: 400px;
+}
+input:nth-child(7):focus~ .box .bottom{
+    top: 400px;
+}
+input:nth-child(1):focus~ .box{
+    animation-duration: 0s;
+}
+input:nth-child(2):focus~ .box{
+    animation-duration: 0s;
+    transform: rotateX(180deg) rotateZ(180deg);
+}
+input:nth-child(3):focus~ .box{
+    animation-duration: 0s;
+    transform: rotateY(90deg);
+}
+input:nth-child(4):focus~ .box{
+    animation-duration: 0s;
+    transform: rotateY(-90deg);
+}
+input:nth-child(5):focus~ .box{
+    animation-duration: 0s;
+    transform: rotateX(-90deg);
+}
+input:nth-child(6):focus~ .box{
+    animation-duration: 0s;
+    transform: rotateX(90deg) rotateY(180deg);
+}
+.box {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 9000px;
+    transform-style: preserve-3d;
+    animation: moving 5s linear infinite;
+}
+@keyframes moving {
+    0%,100%{
+        transform: rotateX(90deg) rotateY(90deg);
+    }
+    30%{
+        transform: rotateX(40deg) rotateY(180deg);
+    }
+    60%{
+        transform: rotateX(-90deg) rotateY(-90deg)
+    }
+}
+.card{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.front{
+    transform: translateZ(100px);
+}
+.back{
+    transform: translateZ(-100px);
+}
+.left{
+    right: 300px;
+    transform: rotateY(90deg);
+}
+.right{
+    left: 300px;
+    transform: rotateY(-90deg);
+}
+.top{
+    bottom: 300px;
+    transform: rotateX(90deg);
+}
+.bottom{
+    top: 300px;
+    transform: rotateX(90deg);
+}

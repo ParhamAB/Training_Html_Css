@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+.main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-image: linear-gradient(to left top,rgba(252, 93, 93, 0.603),rgba(255, 192, 75, 0.678));
+}
+form{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.login-box {
+    position: absolute;
+    width: 30%;
+    height: 70%;
+    background-color: rgba(135, 236, 236, 0.233);
+    border-radius: 15%;
+    border: 1px solid black;
+    box-shadow: 20px 20px 50px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: center;
+    animation: movebox 5s infinite;
+}
+.lbl-user{
+    position: absolute;
+    font-size: 20px;
+    top: 120px;
+    left: 400px;
+}
+.input-user{
+    position: absolute;
+    width: 65%;
+    height: 8%;
+    font-size: 25px;
+    top: 150px;
+    border: 1px solid black;
+    border-radius: 50px;
+    text-align: center;
+    background-color: rgba(135, 236, 236, 0);
+}
+.lbl-pass{
+    position: absolute;
+    font-size: 20px;
+    top: 220px;
+    left: 420px;
+}
+.input-pass{
+    position: absolute;
+    width: 65%;
+    height: 8%;
+    font-size: 25px;
+    top: 250px;
+    border: 1px solid black;
+    border-radius: 50px;
+    text-align: center;
+    background-color: rgba(135, 236, 236, 0);
+}
+.lbl-chckbox{
+    position: absolute;
+    top: 360px;
+    left: 230px;
+    font-size: 20px;
+}
+.chckbox-save{
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    font-size: 25px;
+    top: 350px;
+    left: 340px;
+    border: 1px solid black;
+    border-radius: 50px;
+    text-align: center;
+    background-color: rgba(135, 236, 236, 0);
+}
+.btn-login{
+    position: absolute;
+    width: 65%;
+    height: 8%;
+    font-size: 25px;
+    top: 470px;
+    border: 1px solid black;
+    border-radius: 50px;
+    text-align: center;
+    background-color: rgb(135, 236, 236);
+}
+.btn-login:hover{
+    background-color: rgba(62, 65, 65, 0.185);
+}
+.btn-login:active{
+    background-color: rgb(12, 178, 255);
+    box-shadow: 0 0 10px rgb(12, 178, 255),
+    0 0 50px rgb(12, 178, 255),
+    0 0 100px rgb(12, 178, 255),
+    0 0 500px rgb(12, 178, 255);
+}
+.anim{
+    position: absolute;
+    z-index: -1;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+    animation: moving 5s infinite
+}
+.anim:nth-child(2){
+    top: 200px;
+    left: 800px;
+    background-color: red;
+    animation-delay: 2s;
+}
+.anim:nth-child(3){
+    top: 600px;
+    left: 800px;
+    background-color: red;
+    animation-delay: 0;
+}
+.anim:nth-child(4){
+    top: 500px;
+    left: 1200px;
+    background-color: red;
+    animation-delay: 3s;
+}
+.anim:nth-child(5){
+    top: 300px;
+    left: 1100px;
+    background-color: red;
+    animation-delay: 2s;
+}
+@keyframes movebox{
+    0%{
+        margin-top: 0;
+    }
+    50%{
+        margin-top: 30px;
+    }
+    
+}
+@keyframes moving {
+    0%{
+        margin-top: 0;
+    }
+    50%{
+        margin-top: 30px;
+    }
+}

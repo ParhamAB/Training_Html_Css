@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition: all 0.5s;
+}
+.fullscreen{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background: radial-gradient(rgba(255,255,255,0.8) 20%,rgba(0,0,0,0.8));
+}
+.menu2{
+    position: absolute;
+    width: 300px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu2:active{
+    transform: translateX(-200px);
+}
+.mainmenu{
+    position: absolute;
+    width: 300px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(0px);
+}
+.ul2{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: skewY(-15deg);
+    transform: translateX(-500px);
+}
+.ul-left-menu{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: skewY(-15deg);
+}
+.li-menu{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: var(--i);
+}
+.li-menu:nth-child(1){
+    top: 30px;
+}
+.li-menu:nth-child(2){
+    top: 130px;
+}
+.li-menu:nth-child(3){
+    top: 230px;
+}
+.li-menu:nth-child(4){
+    top: 330px;
+}
+.li-menu:nth-child(5){
+    top: 430px;
+}
+.li-menu::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(39, 37, 37);
+    transform-origin: right;
+    left: -100px;
+    transform: skewY(45deg);
+}
+.li-menu::after{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    top: -100px;
+}
+.li-menu:hover{
+    color: gray;
+    background: rgb(0, 255, 255);
+    transform: translateX(-100px);
+}
+.li-menu:hover .mainmenu{
+    transform: translateX(-200px);
+}
+.li-menu:hover::after{
+    background: rgb(120, 255, 255);
+    transition: 0.5s;
+}
+.li-menu:hover::before{
+    background: rgb(23, 87, 87);
+    transition: 0.5s;
+}
+.li-menu:nth-child(5){
+    box-shadow: 0px 100px 70px black;
+}
+
+

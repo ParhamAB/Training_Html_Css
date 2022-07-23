@@ -1,0 +1,294 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    width: 100%;
+    height: 99vh;
+}
+img{
+    width: 100%;
+    height: 99.6vh;
+    filter: saturate(150%);
+}
+.header {
+    position: absolute;
+    width: 90%;
+    height: 200px;
+    top: 20px;
+    left: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+ul{
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row-reverse;
+    font-size: 30px
+}
+li{
+    list-style-type: none;
+}
+a{
+    color: white;
+    margin-right: 60px;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+.address {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 30%;
+    height: 95%;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    animation: animate 6s infinite;
+}
+.example:hover .foodexample{
+    display: block;
+}
+.example:hover .cuntact{
+    display: block;
+}
+.foodexample {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    background-color: rgba(0, 255, 255, 0.384);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    border-radius: 20px;
+    font-size: 20px;
+    display: none;
+    animation: anim 2s 1;
+}
+.cuntact{
+    position: absolute;
+    right: 330px;
+    width: 800px;
+    height: 700px;
+    background-color: rgba(0, 255, 255, 0.384);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    border-radius: 20px;
+    font-size: 20px;
+    display: none;
+    animation: anim2 2s 1;
+}
+.cuntact-text1{
+    position: absolute;
+    top: 80px;
+    left: 600px;
+    font-size: 15px;
+}
+.cuntact-text2{
+    position: absolute;
+    top: 180px;
+    left: 600px;
+    font-size: 15px;
+}
+.img-cuntact{
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    top: 50px;
+    left: 50px;
+}
+.under{
+    margin: 20px;
+}
+.under:hover{
+    color: red;
+}
+.li-margin{
+    margin-top: 40px;
+}
+.addr-header{
+    position: absolute;
+    width: 80%;
+    height: 20%;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.addr-h1{
+    font-size: 70px;
+    color: white;
+}
+.addr-res{
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    top: 300px;
+}
+.number{
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    top: 600px;
+}
+.btn-order{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 80%;
+    height: 60px;
+    font-size: 50px;
+    background-color: rgba(255, 0, 0, 0.37);
+}
+.btn-order:hover{
+    background-color: rgb(255, 0, 0);
+}
+.main-menu{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+.food-menu {
+    width: 20%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.493);
+    float: right;
+    margin-top: 45px;
+    margin-right: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.ul-menu{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.main-menu-btn{
+    font-size: 50px;
+    text-decoration: none;
+    margin-left: 50px;
+}
+.li-menu{
+    margin-top: 100px;
+}
+.li-menu:hover{
+    color: red;
+}
+.food-menu-after{
+    position: absolute;
+    width: 70%;
+    height: 90%;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    top: 50px;
+    left: 50px;
+    display: none;
+}
+.li-menu:hover .food-menu-after{
+    display: block;
+}
+.img-bord1{
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    top: 50px;
+    left: 50px;
+}
+.img-bord2{
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    top: 450px;
+    left: 50px;
+}
+.h1-sett1{
+    position: absolute;
+    top: 150px;
+    left: 600px;
+}
+.h1-sett2{
+    position: absolute;
+    top: 550px;
+    left: 600px;
+}
+@keyframes anim {
+    0%{
+        width: 100px;
+        height: 0px;
+    }
+    100%{
+        width: 100px;
+        height: 200px;
+    }
+}
+@keyframes anim2 {
+    0%{
+        width: 800px;
+        height: 0px;
+    }
+    100%{
+        width: 800px;
+        height: 700px;
+    }
+}
+@keyframes animate {
+    0%{
+        top: 20px;
+        left: 20px;
+    }
+    25%{
+        top: 15px;
+        left: 20px;
+    }
+    50%{
+        top: 20px;
+        left: 20px;
+    }
+    75%{
+        top: 25px;
+        left: 20px;
+    }
+    100%{
+        top: 20px;
+        left: 20px;
+    }
+}
